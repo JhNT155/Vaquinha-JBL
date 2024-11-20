@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaquinha para Caixa de Som JBL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ajude na Vaquinha!</h1>
+        <p>Estamos arrecadando para comprar uma caixa de som JBL para as festas de final de ano.</p>
+    </header>
+    <main>
+        <section id="objetivo">
+            <h2>Nosso Objetivo</h2>
+            <p>Queremos comprar uma caixa de som JBL para animar as festas de final de ano. A meta é arrecadar <strong>R$ 1.500,00</strong>.</p>
+        </section>
+        <section id="formulario">
+            <h2>Faça sua Contribuição</h2>
+            <form id="contribuicao-form">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="valor">Valor da Contribuição (R$):</label>
+                <input type="number" id="valor" name="valor" min="1" required>
+                
+                <button type="submit">Contribuir</button>
+            </form>
+        </section>
+        <section id="atualizacao">
+            <h2>Arrecadação Atual</h2>
+            <p>Já arrecadamos: <span id="total-arrecadado">R$ 0,00</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vaquinha JBL. Vamos fazer a festa acontecer!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
